@@ -1,0 +1,5 @@
+packages:
+  - workspace/*
+  - packages/*
+  - components/**
+  - '!**/test/**'
