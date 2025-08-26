@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "type": "module",
+  "name": "graphql-pothos-example-2025",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "packageManager": "pnpm@10.15.0"
+}
