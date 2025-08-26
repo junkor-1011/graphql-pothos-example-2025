@@ -8,6 +8,9 @@ temp
 *.tgz
 *.zip
 
+# TURBOREPO
+.turbo
+
 # Created by https://www.toptal.com/developers/gitignore/api/node,vim,visualstudiocode,webstorm+all,emacs,linux,macos,windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,vim,visualstudiocode,webstorm+all,emacs,linux,macos,windows
 
