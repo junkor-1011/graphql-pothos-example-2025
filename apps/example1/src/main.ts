@@ -3,8 +3,11 @@ import { createYoga } from "graphql-yoga";
 
 import { builder } from "./buider";
 
+const isProd: boolean = process.env.NODE_ENV === "production";
+
 const yoga = createYoga({
 	schema: builder.toSchema(),
+	graphiql: !isProd,
 });
 
 const server = createServer(yoga);
