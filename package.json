@@ -3,13 +3,14 @@
 	"type": "module",
 	"name": "graphql-pothos-example-2025",
 	"version": "1.0.0",
+	"license": "MIT",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"prepare": "husky"
 	},
-	"packageManager": "pnpm@10.15.0",
+	"packageManager": "pnpm@10.15.1",
 	"devDependencies": {
 		"@biomejs/biome": "^2.2.2",
 		"husky": "^9.1.7",
