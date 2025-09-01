@@ -5,6 +5,7 @@
 	"version": "1.0.0",
 	"main": "index.js",
 	"scripts": {
+		"docs:schema": "tsx scripts/generate-schema.ts",
 		"build": "tsx scripts/build.ts",
 		"dev": "tsx src/main.ts",
 		"start": "node ./dist/main.mjs",
@@ -22,6 +23,7 @@
 	},
 	"dependencies": {
 		"@pothos/core": "^4.9.0",
+		"graphql": "^16.11.0",
 		"graphql-yoga": "^5.15.1",
 		"neverthrow": "^8.2.0"
 	}
