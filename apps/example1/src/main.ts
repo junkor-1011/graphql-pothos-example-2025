@@ -8,6 +8,7 @@ const isProd: boolean = process.env.NODE_ENV === "production";
 const yoga = createYoga({
 	schema: builder.toSchema(),
 	graphiql: !isProd,
+	logging: isProd ? "info" : "debug",
 });
 
 const server = createServer(yoga);
