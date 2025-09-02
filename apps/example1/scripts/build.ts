@@ -15,7 +15,7 @@ await esbuild.build({
 	banner: {
 		js: 'import { createRequire } from "module"; const require = createRequire(import.meta.url); const __filename = import.meta.filename; const __dirname = import.meta.dirname;',
 	},
-	define: {
-		"process.env.NODE_ENV": "'production'",
-	},
+	// define: {
+	// 	"process.env.NODE_ENV": "'production'",
+	// },
 });
