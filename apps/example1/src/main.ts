@@ -2,6 +2,7 @@ import { createServer } from "node:http";
 import { createYoga } from "graphql-yoga";
 
 import { builder } from "./buider";
+import { logger } from "./logger";
 
 const isProd: boolean = process.env.NODE_ENV === "production";
 
@@ -14,5 +15,5 @@ const yoga = createYoga({
 const server = createServer(yoga);
 
 server.listen(8000, () => {
-	console.log("listen http://localhost:8000/graphql");
+	logger.info("listen http://localhost:8000/graphql");
 });
