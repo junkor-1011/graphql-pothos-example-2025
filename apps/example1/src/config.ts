@@ -14,6 +14,7 @@ const LOG_LEVELS = [
 
 const envSchema = v.object({
 	LOG_LEVEL: v.optional(v.picklist(LOG_LEVELS), "info"),
+	LOG_FORMAT: v.optional(v.picklist(["json", "pretty"]), "json"),
 });
 
 export const env = v.parse(envSchema, process.env);

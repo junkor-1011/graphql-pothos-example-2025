@@ -7,8 +7,9 @@
 	"scripts": {
 		"docs:schema": "tsx scripts/generate-schema.ts",
 		"build": "tsx scripts/build.ts",
-		"dev": "tsx watch --env-file-if-exists .env src/main.ts | pino-pretty",
+		"dev": "tsx watch --env-file-if-exists .env src/main.ts",
 		"start": "node ./dist/main.mjs",
+		"start:pretty-log": "node ./dist/main.mjs | pino-pretty",
 		"test": "vitest run"
 	},
 	"devDependencies": {
