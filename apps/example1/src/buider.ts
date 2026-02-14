@@ -10,6 +10,7 @@ builder.queryType({
 				name: t.arg.string(),
 			},
 			resolve: (_parent, { name }) => {
+				logger.debug("query hello called.");
 				return `hello, ${name ?? "world"}`;
 			},
 		}),
@@ -23,6 +24,8 @@ builder.mutationType({
 				name: t.arg.string({ required: true }),
 			},
 			resolve: (_parent, { name }) => {
+				logger.debug("mutation greet called.");
+
 				logger.debug(`name: ${name}`);
 				return `hey, ${name}!!`;
 			},
